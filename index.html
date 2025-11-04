@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Segment Looper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>YouTube Segment Looper</h1>
+        <p>Enter a YouTube URL or Video ID and set the start/end times to loop a specific segment.</p>
+
+        <div class="input-group">
+            <label for="video-url">YouTube URL or Video ID</label>
+            <input type="text" id="video-url"
+                placeholder="e.g., https://www.youtube.com/watch?v=dQw4w9WgXcQ or dQw4w9WgXcQ">
+        </div>
+
+        <div class="time-inputs">
+            <div class="input-group">
+                <label for="start-time">Start Time (MM:SS or seconds)</label>
+                <input type="text" id="start-time" placeholder="e.g., 0:43 or 43">
+            </div>
+            <div class="input-group">
+                <label for="end-time">End Time (MM:SS or seconds)</label>
+                <input type="text" id="end-time" placeholder="e.g., 1:15 or 75">
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="apply-loop">Apply Loop</button>
+            <button id="stop-loop">Stop & Clear</button>
+        </div>
+
+        <div id="error-message" class="error"></div>
+        <div id="player-container">
+            <div id="player"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
